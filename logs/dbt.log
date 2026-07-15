@@ -1,0 +1,332 @@
+[0m20:50:07.878138 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6e6119e5a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6e5e43d100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6e5e43d130>]}
+
+
+============================== 20:50:07.928921 | 61bb4e28-377f-4472-976c-4dd78c00fa40 ==============================
+[0m20:50:07.928921 [info ] [MainThread]: Running with dbt=1.11.12
+[0m20:50:07.929725 [debug] [MainThread]: running dbt with arguments {'fail_fast': 'False', 'printer_width': '80', 'quiet': 'False', 'invocation_command': 'dbt init', 'indirect_selection': 'eager', 'introspect': 'True', 'send_anonymous_usage_stats': 'True', 'static_parser': 'True', 'write_json': 'True', 'partial_parse': 'True', 'warn_error': 'None', 'use_colors': 'True', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'log_format': 'default', 'log_path': 'logs', 'profiles_dir': '/home/soufiane/.dbt', 'log_cache_events': 'False', 'debug': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'cache_selected_only': 'False', 'empty': 'None'}
+[0m20:50:08.006077 [info ] [MainThread]: Creating dbt configuration folder at /home/soufiane/.dbt
+[0m20:50:34.231605 [debug] [MainThread]: Starter project path: /home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/include/starter_project
+[0m20:50:34.252088 [info ] [MainThread]: 
+Your new dbt project "dbt_learn" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m20:50:34.255542 [info ] [MainThread]: Setting up your profile.
+[0m20:50:42.906083 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m20:50:42.906851 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m20:50:42.907510 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m21:33:49.727815 [info ] [MainThread]: Profile dbt_learn written to /home/soufiane/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m21:33:49.734849 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 2527.7817, "process_in_blocks": "182168", "process_kernel_time": 0.810634, "process_mem_max_rss": "306560", "process_out_blocks": "86816", "process_user_time": 9.974011}
+[0m21:33:49.739615 [debug] [MainThread]: Command `dbt init` succeeded at 21:33:49.738876 after 2527.79 seconds
+[0m21:33:49.741687 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6e703bf7d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6e43754080>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f6e430669c0>]}
+[0m21:33:49.744272 [debug] [MainThread]: Flushing usage events
+[0m21:33:50.891780 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:34:02.765559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f470c7929f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f470dae2f00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f470c602000>]}
+
+
+============================== 21:34:02.770956 | 4bfeebdf-d57a-429b-895b-7209917009db ==============================
+[0m21:34:02.770956 [info ] [MainThread]: Running with dbt=1.11.12
+[0m21:34:02.771837 [debug] [MainThread]: running dbt with arguments {'use_experimental_parser': 'False', 'warn_error': 'None', 'log_format': 'default', 'empty': 'None', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'printer_width': '80', 'version_check': 'True', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'profiles_dir': '/home/soufiane/.dbt', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'no_print': 'None', 'log_path': 'logs', 'quiet': 'False', 'log_cache_events': 'False', 'target_path': 'None', 'cache_selected_only': 'False', 'write_json': 'True'}
+[0m21:34:02.792705 [info ] [MainThread]: dbt version: 1.11.12
+[0m21:34:02.793680 [info ] [MainThread]: python version: 3.12.13
+[0m21:34:02.794592 [info ] [MainThread]: python path: /home/soufiane/Documents/data_engineering/dbt-learn/.venv/bin/python3
+[0m21:34:02.795312 [info ] [MainThread]: os info: Linux-6.19.14-300.fc44.x86_64-x86_64-with-glibc2.43
+[0m21:34:04.231199 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m21:34:04.232173 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m21:34:04.233120 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m21:34:04.961183 [info ] [MainThread]: Using profiles dir at /home/soufiane/.dbt
+[0m21:34:04.961830 [info ] [MainThread]: Using profiles.yml file at /home/soufiane/.dbt/profiles.yml
+[0m21:34:04.962478 [info ] [MainThread]: Using dbt_project.yml file at /home/soufiane/Documents/data_engineering/dbt-learn/dbt_project.yml
+[0m21:34:04.963007 [info ] [MainThread]: adapter type: databricks
+[0m21:34:04.963526 [info ] [MainThread]: adapter version: 1.12.2
+[0m21:34:04.964047 [info ] [MainThread]: Configuration:
+[0m21:34:04.964632 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m21:34:04.965304 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m21:34:04.966183 [info ] [MainThread]: Required dependencies:
+[0m21:34:04.966921 [debug] [MainThread]: Executing "git --help"
+[0m21:34:04.969161 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m21:34:04.969865 [debug] [MainThread]: STDERR: "b''"
+[0m21:34:04.970905 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m21:34:04.972057 [info ] [MainThread]: Connection:
+[0m21:34:04.973137 [info ] [MainThread]:   host: dbc-97535fc7-43bf.cloud.databricks.com
+[0m21:34:04.974153 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/1e438ed9e4c986e8
+[0m21:34:04.975091 [info ] [MainThread]:   catalog: dbt_tuto
+[0m21:34:04.976058 [info ] [MainThread]:   schema: default
+[0m21:34:04.977478 [info ] [MainThread]: Registered adapter: databricks=1.12.2
+[0m21:34:05.203439 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m21:34:05.203980 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m21:34:06.490960 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type='workspace'): no
+[0m21:34:06.492107 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m21:34:06.493274 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.3.0 (supported)
+[0m21:34:06.494582 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.117.0 (supported)
+[0m21:34:06.495682 [debug] [MainThread]: Using databricks connection "debug"
+[0m21:34:06.496959 [debug] [MainThread]: On debug: select 1 as id
+[0m21:34:06.498072 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m21:34:10.971885 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f17e31-0850-1efb-9f01-df393d4ba6d2) - Created
+[0m21:34:11.436284 [debug] [MainThread]: On debug: Close
+[0m21:34:11.438677 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f17e31-0850-1efb-9f01-df393d4ba6d2) - Closing
+[0m21:34:12.867201 [error] [MainThread]: Encountered an error:
+
+[0m21:34:12.903463 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/databricks/impl.py", line 413, in connection_named
+    yield
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/task/debug.py", line 443, in attempt_connection
+    adapter.debug_query()
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/databricks/impl.py", line 1179, in debug_query
+    self.execute("select 1 as id")
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/databricks/impl.py", line 520, in execute
+    return super().execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt_common/record.py", line 538, in record_replay_wrapper
+    return func_to_record(*call_args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/base/impl.py", line 523, in execute
+    return self.connections.execute(sql=sql, auto_begin=auto_begin, fetch=fetch, limit=limit)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/databricks/connections.py", line 384, in execute
+    _, cursor = self.add_query(sql, auto_begin)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/databricks/connections.py", line 357, in add_query
+    cursor = handle.execute(sql, bindings)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/databricks/handle.py", line 226, in execute
+    return self._safe_execute(
+           ^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/databricks/handle.py", line 320, in _safe_execute
+    self._cursor = CursorWrapper(f(self._conn.cursor()))
+                                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/databricks/handle.py", line 227, in <lambda>
+    lambda cursor: cursor.execute(
+                   ^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/databricks/sql/telemetry/latency_logger.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/databricks/sql/client.py", line 1355, in execute
+    self.active_result_set = self.backend.execute_command(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/databricks/sql/backend/thrift_backend.py", line 1064, in execute_command
+    resp = self.make_request(self._client.ExecuteStatement, req)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/databricks/sql/backend/thrift_backend.py", line 517, in make_request
+    response_or_error_info = attempt_request(attempt)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/databricks/sql/backend/thrift_backend.py", line 423, in attempt_request
+    response = method(request)
+               ^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/databricks/sql/thrift_api/TCLIService/TCLIService.py", line 300, in ExecuteStatement
+    self.send_ExecuteStatement(req)
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/databricks/sql/thrift_api/TCLIService/TCLIService.py", line 309, in send_ExecuteStatement
+    self._oprot.trans.flush()
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/databricks/sql/auth/thrift_http_client.py", line 193, in flush
+    self.__resp = self.__pool.request(
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/urllib3/_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/urllib3/_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/urllib3/connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/urllib3/connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.12/http/client.py", line 1459, in getresponse
+    response.begin()
+  File "/usr/lib64/python3.12/http/client.py", line 336, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.12/http/client.py", line 297, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.12/socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.12/ssl.py", line 1251, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.12/ssl.py", line 1103, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/cli/requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/cli/main.py", line 425, in debug
+    results = task.run()
+              ^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/task/debug.py", line 144, in run
+    connection_status = self.test_connection()
+                        ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/task/debug.py", line 465, in test_connection
+    connection_result = self.attempt_connection(self.profile)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/task/debug.py", line 441, in attempt_connection
+    with adapter.connection_named("debug"):
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.12/contextlib.py", line 158, in __exit__
+    self.gen.throw(value)
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/databricks/impl.py", line 416, in connection_named
+    self.release_connection()
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/base/impl.py", line 465, in release_connection
+    self.connections.release()
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/databricks/connections.py", line 460, in release
+    self.close(conn)
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/databricks/connections.py", line 549, in close
+    return super().close(connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/base/connections.py", line 379, in close
+    cls._close_handle(connection)
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/base/connections.py", line 346, in _close_handle
+    connection.handle.close()
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/databricks/handle.py", line 260, in close
+    self._cleanup(
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/databricks/handle.py", line 305, in _cleanup
+    utils.handle_exceptions_as_warning(lambda: self._conn.close(), failLog)
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/databricks/utils.py", line 89, in handle_exceptions_as_warning
+    op()
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/dbt/adapters/databricks/handle.py", line 305, in <lambda>
+    utils.handle_exceptions_as_warning(lambda: self._conn.close(), failLog)
+                                               ^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/databricks/sql/client.py", line 545, in close
+    self._close()
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/databricks/sql/client.py", line 553, in _close
+    self.session.close()
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/databricks/sql/session.py", line 367, in close
+    self.backend.close_session(self._session_id)
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/databricks/sql/backend/thrift_backend.py", line 629, in close_session
+    self.make_request(self._client.CloseSession, req)
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/databricks/sql/backend/thrift_backend.py", line 517, in make_request
+    response_or_error_info = attempt_request(attempt)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/databricks/sql/backend/thrift_backend.py", line 423, in attempt_request
+    response = method(request)
+               ^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/databricks/sql/thrift_api/TCLIService/TCLIService.py", line 236, in CloseSession
+    self.send_CloseSession(req)
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/databricks/sql/thrift_api/TCLIService/TCLIService.py", line 245, in send_CloseSession
+    self._oprot.trans.flush()
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/databricks/sql/auth/thrift_http_client.py", line 193, in flush
+    self.__resp = self.__pool.request(
+                  ^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/urllib3/_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/urllib3/_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/urllib3/connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/urllib3/connectionpool.py", line 464, in _make_request
+    self._validate_conn(conn)
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/urllib3/connectionpool.py", line 1106, in _validate_conn
+    conn.connect()
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/urllib3/connection.py", line 796, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/urllib3/connection.py", line 975, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/urllib3/util/ssl_.py", line 433, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/soufiane/Documents/data_engineering/dbt-learn/.venv/lib64/python3.12/site-packages/urllib3/util/ssl_.py", line 477, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.12/ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib64/python3.12/ssl.py", line 1041, in _create
+    self.do_handshake()
+  File "/usr/lib64/python3.12/ssl.py", line 1319, in do_handshake
+    self._sslobj.do_handshake()
+KeyboardInterrupt
+
+[0m21:34:12.911921 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 10.222534, "process_in_blocks": "56", "process_kernel_time": 0.397686, "process_mem_max_rss": "241488", "process_out_blocks": "144", "process_user_time": 4.841909}
+[0m21:34:12.914168 [debug] [MainThread]: Command `dbt debug` failed at 21:34:12.913714 after 10.23 seconds
+[0m21:34:12.916542 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m21:34:12.919708 [debug] [MainThread]: On debug: Close
+[0m21:34:12.923280 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f470c3ffe30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f46f47433b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f46f470af60>]}
+[0m21:34:12.926953 [debug] [MainThread]: Flushing usage events
+[0m01:32:11.818556 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d1c14dfa0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d19e72960>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d1a148fe0>]}
+
+
+============================== 01:32:11.824792 | 0f5d3e8b-7091-46ce-88e4-07d55751d312 ==============================
+[0m01:32:11.824792 [info ] [MainThread]: Running with dbt=1.11.12
+[0m01:32:11.826076 [debug] [MainThread]: running dbt with arguments {'empty': 'None', 'debug': 'False', 'indirect_selection': 'eager', 'fail_fast': 'False', 'warn_error': 'None', 'log_cache_events': 'False', 'send_anonymous_usage_stats': 'True', 'introspect': 'True', 'static_parser': 'True', 'cache_selected_only': 'False', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'write_json': 'True', 'quiet': 'False', 'profiles_dir': '/home/soufiane/.dbt', 'use_colors': 'True', 'printer_width': '80', 'log_format': 'default', 'no_print': 'None', 'log_path': 'logs', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'version_check': 'True'}
+[0m01:32:11.847971 [info ] [MainThread]: dbt version: 1.11.12
+[0m01:32:11.848679 [info ] [MainThread]: python version: 3.12.13
+[0m01:32:11.849333 [info ] [MainThread]: python path: /home/soufiane/Documents/data_engineering/dbt-learn/.venv/bin/python3
+[0m01:32:11.849959 [info ] [MainThread]: os info: Linux-6.19.14-300.fc44.x86_64-x86_64-with-glibc2.43
+[0m01:32:13.480284 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m01:32:13.480932 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m01:32:13.481604 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m01:32:15.485653 [info ] [MainThread]: Using profiles dir at /home/soufiane/.dbt
+[0m01:32:15.487964 [info ] [MainThread]: Using profiles.yml file at /home/soufiane/.dbt/profiles.yml
+[0m01:32:15.490438 [info ] [MainThread]: Using dbt_project.yml file at /home/soufiane/Documents/data_engineering/dbt-learn/dbt_project.yml
+[0m01:32:15.493076 [info ] [MainThread]: adapter type: databricks
+[0m01:32:15.495502 [info ] [MainThread]: adapter version: 1.12.2
+[0m01:32:15.497420 [info ] [MainThread]: Configuration:
+[0m01:32:15.499057 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m01:32:15.500988 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m01:32:15.502603 [info ] [MainThread]: Required dependencies:
+[0m01:32:15.504374 [debug] [MainThread]: Executing "git --help"
+[0m01:32:15.509700 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   history    EXPERIMENTAL: Rewrite history\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Set `HEAD` or the index to a known state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m01:32:15.512000 [debug] [MainThread]: STDERR: "b''"
+[0m01:32:15.513967 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m01:32:15.516044 [info ] [MainThread]: Connection:
+[0m01:32:15.520169 [info ] [MainThread]:   host: dbc-97535fc7-43bf.cloud.databricks.com
+[0m01:32:15.521333 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/1e438ed9e4c986e8
+[0m01:32:15.522571 [info ] [MainThread]:   catalog: dbt_tuto
+[0m01:32:15.523578 [info ] [MainThread]:   schema: default
+[0m01:32:15.524765 [info ] [MainThread]: Registered adapter: databricks=1.12.2
+[0m01:32:16.161538 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m01:32:16.162481 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m01:32:27.229648 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type='workspace'): no
+[0m01:32:27.231927 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m01:32:27.234183 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.3.0 (supported)
+[0m01:32:27.236056 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.117.0 (supported)
+[0m01:32:27.238182 [debug] [MainThread]: Using databricks connection "debug"
+[0m01:32:27.240458 [debug] [MainThread]: On debug: select 1 as id
+[0m01:32:27.242295 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m01:33:30.524354 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f17e52-5979-17dd-87b9-7237a37b1365) - Created
+[0m01:33:33.038476 [debug] [MainThread]: SQL status: OK in 65.800 seconds
+[0m01:33:33.044103 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f17e52-5979-17dd-87b9-7237a37b1365, command-id=01f17e52-78ec-14e7-a22b-c310408e9801) - Closing
+[0m01:33:33.046277 [debug] [MainThread]: On debug: Close
+[0m01:33:33.048319 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f17e52-5979-17dd-87b9-7237a37b1365) - Closing
+[0m01:33:33.314189 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m01:33:33.317966 [info ] [MainThread]: [31m1 check failed:[0m
+[0m01:33:33.320763 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/soufiane/Documents/data_engineering/dbt-learn/dbt_project.yml> not found
+
+[0m01:33:33.340805 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 81.59942, "process_in_blocks": "201520", "process_kernel_time": 0.832129, "process_mem_max_rss": "241596", "process_out_blocks": "32", "process_user_time": 6.74328}
+[0m01:33:33.347054 [debug] [MainThread]: Command `dbt debug` failed at 01:33:33.345752 after 81.61 seconds
+[0m01:33:33.351377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d1dfb7770>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1cfe45af30>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1d1b40e810>]}
+[0m01:33:33.357032 [debug] [MainThread]: Flushing usage events
+[0m01:33:41.627336 [debug] [MainThread]: An error was encountered while trying to flush usage events

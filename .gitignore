@@ -8,6 +8,7 @@ dbt_learn/profiles.yml
 .venv/
 __pycache__/
 *.pyc
+logs/
 
 # Environment
 .env
